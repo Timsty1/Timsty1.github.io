@@ -8,11 +8,11 @@ redirect_from:
   - /about.html
 ---
 
-Hi! I am a Ph.D. student at [Gaoling School of Artificial Intelligence](http://ai.ruc.edu.cn), [Renmin University of China](https://www.ruc.edu.cn), where I am advised by Prof. [Zhiwu Lu](https://gsai.ruc.edu.cn/luzhiwu). Before that, I got my Master's degree at the Beijing Jiaotong University. I was a member of [INSIS](http://insis.bjtu.edu.cn/) group, where I was advised by Assoc. Prof. [Shuo Zhang](https://faculty.bjtu.edu.cn/9278/). I am interested in Large Multi-modal Model and Embodied AI. Specifically, I am now working on building robust Vision-Language-Action model for robot manipulation.
+Hi! I am a Ph.D. candidate at [Gaoling School of Artificial Intelligence](http://ai.ruc.edu.cn), [Renmin University of China](https://www.ruc.edu.cn), where I am advised by Prof. [Zhiwu Lu](https://gsai.ruc.edu.cn/luzhiwu). Before that, I got my Master's degree at the Beijing Jiaotong University. I was a member of [INSIS](http://insis.bjtu.edu.cn/) group, where I was advised by Assoc. Prof. [Shuo Zhang](https://faculty.bjtu.edu.cn/9278/). I am interested in Multi-modal Learning and Embodied AI. Currently, I am doing research at UNC as a visiting scholar with the guidance of Assoc. Prof. [Mingyu Ding](https://dingmyu.github.io/)! Welcome to discuss any ideas with me!
 
 Education
 ======
-
+* Intern scholar in [Computer Science School](https://cs.unc.edu/), University of North Carolina at Chapel Hill, Oct.2025 - May.2026.
 * Ph.D. student in [Gaoling School of Artificial Intelligence](http://ai.ruc.edu.cn), Renmin University of China, Sept. 2023 - Now. 
 * Master student in [Computer Science School](https://cs.bjtu.edu.cn/), Beijing Jiaotong University, Sept. 2020 - July 2023. 
 * Bachelor in [Computer Science School](https://cs.bjtu.edu.cn/), Beijing Jiaotong University, Sept. 2016 - July 2020.
