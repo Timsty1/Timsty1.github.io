@@ -24,8 +24,8 @@ Selected Publications
 (# denotes Equal Contribution)
 
 * **Mixture of Horizons in Action Chunking**   
-**Dong Jing**, Gang Wang, Jiaqi Liu, Weiliang Tang, Zelong Sun, Yunchao Yao, Zhenyu Wei, Yun-Hui Liu, Zhiwu Lu, Mingyu Ding
-***🔥Preprint🔥*** [[paper](https://arxiv.org/abs/2511.19433) [project](https://timsty1.github.io/moh/) [code](https://github.com/Timsty1/MixtureOfHorizons)] 
+**Dong Jing**, Gang Wang, Jiaqi Liu, Weiliang Tang, Zelong Sun, Yunchao Yao, Zhenyu Wei, Yun-Hui Liu, Zhiwu Lu, Mingyu Ding   
+***🔥Preprint🔥*** [[paper](https://arxiv.org/abs/2511.19433),[project](https://timsty1.github.io/moh/),[code](https://github.com/Timsty1/MixtureOfHorizons)] 
 
 * **Incentivizing Multimodal Reasoning in Large Models for Direct Robot Manipulation**   
 Weiliang Tang#, **Dong Jing**#, Jia-Hui Pan, Zhiwu Lu, Yun-Hui Liu, Li Erran Li, Mingyu Ding, Chi-Wing Fu   
