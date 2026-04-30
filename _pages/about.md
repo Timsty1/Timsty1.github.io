@@ -25,15 +25,27 @@ Selected Publications
 
 * **Mixture of Horizons in Action Chunking**   
 **Dong Jing**, Gang Wang, Jiaqi Liu, Weiliang Tang, Zelong Sun, Yunchao Yao, Zhenyu Wei, Yun-Hui Liu, Zhiwu Lu, Mingyu Ding   
-***🔥Preprint🔥*** [[paper](https://arxiv.org/abs/2511.19433), [project](https://timsty1.github.io/moh/), [code](https://github.com/Timsty1/MixtureOfHorizons)] 
+***🔥ICML 2026🔥*** [[paper](https://arxiv.org/abs/2511.19433), [project](https://timsty1.github.io/moh/), [code](https://github.com/Timsty1/MixtureOfHorizons)]
+
+* **When Vision Overrides Language: Evaluating and Mitigating Counterfactual Failures in VLAs**   
+Yu Fang, Yuchun Feng, **Dong Jing**, Jiaqi Liu, Yue Yang, Zhenyu Wei, Daniel Szafir, Mingyu Ding   
+***🔥Preprint🔥*** [[paper](https://arxiv.org/pdf/2602.17659)]
+
+* **Say Cheese! Detail-Preserving Portrait Collection Generation via Natural Language Edits**   
+Zelong Sun, Jiahui Wu, Ying Ba, **Dong Jing**, Zhiwu Lu   
+***🔥CVPR 2026🔥*** [[paper](https://arxiv.org/pdf/2601.20511)]
+
+* **Adaptive Task Balancing for Visual Instruction Tuning via Inter-Task Contribution and Intra-Task Difficulty**
+Yanqi Dai, Yong Wang, Zebin You, **Dong Jing**, Xiangxiang Chu, Zhiwu Lu   
+***🔥ICML 2026🔥*** [[paper](https://dl.acm.org/doi/pdf/10.1145/3774904.3792371)]
 
 * **Incentivizing Multimodal Reasoning in Large Models for Direct Robot Manipulation**   
 Weiliang Tang#, **Dong Jing**#, Jia-Hui Pan, Zhiwu Lu, Yun-Hui Liu, Li Erran Li, Mingyu Ding, Chi-Wing Fu   
-***🔥Preprint🔥*** [[paper](https://arxiv.org/pdf/2505.12744)]
+***Preprint*** [[paper](https://arxiv.org/pdf/2505.12744)]
 
 * **CoTMR: Chain-of-Thought Multi-Scale Reasoning for Training-Free Zero-Shot Composed Image Retrieval**   
 Zelong Sun#, **Dong Jing**#, Zhiwu Lu   
-***🔥ICCV 2025🔥*** [[paper](https://arxiv.org/pdf/2502.20826)]
+***ICCV 2025*** [[paper](https://arxiv.org/pdf/2502.20826)]
 
 * **FineCLIP: Self-distilled Region-based CLIP for Better Fine-grained Understanding**   
 **Dong Jing**#, Xiaolong He#, Yutian Luo, Nanyi Fei, Guoxing Yang, Wei Wei, Huiwen Zhao, Zhiwu Lu   
