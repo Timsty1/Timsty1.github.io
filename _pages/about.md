@@ -35,9 +35,9 @@ Yu Fang, Yuchun Feng, **Dong Jing**, Jiaqi Liu, Yue Yang, Zhenyu Wei, Daniel Sza
 Zelong Sun, Jiahui Wu, Ying Ba, **Dong Jing**, Zhiwu Lu   
 ***🔥CVPR 2026🔥*** [[paper](https://arxiv.org/pdf/2601.20511)]
 
-* **Adaptive Task Balancing for Visual Instruction Tuning via Inter-Task Contribution and Intra-Task Difficulty**
+* **Adaptive Task Balancing for Visual Instruction Tuning via Inter-Task Contribution and Intra-Task Difficulty**   
 Yanqi Dai, Yong Wang, Zebin You, **Dong Jing**, Xiangxiang Chu, Zhiwu Lu   
-***🔥ICML 2026🔥*** [[paper](https://dl.acm.org/doi/pdf/10.1145/3774904.3792371)]
+***🔥WWW 2026🔥*** [[paper](https://dl.acm.org/doi/pdf/10.1145/3774904.3792371)]
 
 * **Incentivizing Multimodal Reasoning in Large Models for Direct Robot Manipulation**   
 Weiliang Tang#, **Dong Jing**#, Jia-Hui Pan, Zhiwu Lu, Yun-Hui Liu, Li Erran Li, Mingyu Ding, Chi-Wing Fu   
