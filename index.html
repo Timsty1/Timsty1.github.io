@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dong Jing - 荆栋</title>
+  <meta name="description" content="Dong Jing — Ph.D. candidate at Renmin University of China. Research on Embodied AI and Multimodal Learning.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,700;1,300&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --text: #1c1e21;
+      --muted: #5f6368;
+      --accent: #1a5fb4;       /* link color */
+      --rule: #e4e6e8;         /* divider lines */
+      --venue: #b3261e;        /* venue highlight */
+      --maxw: 880px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      /* Same font scheme as dingmyu.github.io: Merriweather body + Open Sans headings */
+      font-family: "Merriweather", "PT Serif", Georgia, "Times New Roman", "STSong", serif;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 1.65;
+      color: var(--text);
+      background: #ffffff;
+    }
+    .container {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    /* Body weight is 300; default <strong> resolves to 400, which isn't loaded. Force 700. */
+    strong, b { font-weight: 700; }
+
+    /* ---------- Profile header ---------- */
+    .profile {
+      display: flex;
+      gap: 36px;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+    .profile img {
+      width: 230px;
+      height: auto;
+      border-radius: 10px;
+      flex-shrink: 0;
+    }
+    .profile .intro {
+      flex: 1;
+      text-align: center;
+    }
+    h1, h2, h3 {
+      font-family: "Open Sans", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    }
+    .profile h1 {
+      margin: 0 0 4px;
+      font-size: 30px;
+      font-weight: 700;
+    }
+    .profile .cn-name { font-weight: 700; }
+    .profile .role { margin: 0 0 10px; color: var(--text); font-weight: 700; }
+    .profile .email { margin: 0 0 6px; font-size: 15px; }
+    .profile .links { font-size: 15px; }
+    .profile .links a { margin: 0 7px; white-space: nowrap; }
+
+    /* ---------- Sections ---------- */
+    section { margin-top: 40px; }
+    h2 {
+      font-family: "Merriweather", "PT Serif", Georgia, "Times New Roman", "STSong", serif;
+      font-size: 22px;
+      font-weight: 700;
+      margin: 0 0 16px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--rule);
+    }
+    h3.track {
+      font-family: "Merriweather", "PT Serif", Georgia, "Times New Roman", "STSong", serif;
+      font-size: 18px;
+      margin: 28px 0 6px;
+    }
+    h3.track .track-note { font-size: 14px; font-weight: 400; color: var(--muted); }
+    .bio p { margin: 12px 0; }
+    /* Job-seeking highlight */
+    .bio .hiring {
+      background: #fff6d8;
+      border-left: 4px solid #f0b429;
+      border-radius: 6px;
+      padding: 10px 14px;
+    }
+    .note { color: var(--muted); font-size: 14px; }
+    .awards-list { margin: 0; padding-left: 22px; }
+    .awards-list li { margin: 6px 0; }
+
+    /* ---------- Publication cards ---------- */
+    .pub {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+      padding: 18px 0;
+      border-bottom: 1px solid var(--rule);
+    }
+    .pub:last-child { border-bottom: none; }
+    .pub .teaser {
+      width: 300px;
+      flex-shrink: 0;
+    }
+    .pub .teaser img,
+    .pub .teaser video {
+      width: 100%;
+      border-radius: 6px;
+      display: block;
+    }
+    /* Placeholder shown until a real teaser/GIF is added */
+    .pub .teaser .placeholder {
+      width: 100%;
+      aspect-ratio: 2 / 1;
+      border: 1.5px dashed #c4c8cc;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #9aa0a6;
+      font-size: 13px;
+    }
+    .pub .info { flex: 1; min-width: 0; }
+    .pub .title {
+      font-size: 16.5px;
+      font-weight: 700;
+      margin: 0 0 4px;
+    }
+    .pub .title a { color: var(--text); }
+    .pub .title a:hover { color: var(--accent); }
+    .pub .authors {
+      font-size: 14.5px;
+      color: var(--muted);
+      margin: 0 0 6px;
+    }
+    .pub .authors .me { color: var(--text); font-weight: 600; }
+    .pub .meta { font-size: 14.5px; }
+    .pub .venue {
+      color: var(--venue);
+      font-weight: 700;
+      font-style: italic;
+      margin-right: 10px;
+    }
+    .pub .meta a { margin-right: 10px; }
+
+    /* ---------- Footer ---------- */
+    footer {
+      margin-top: 56px;
+      padding-top: 16px;
+      border-top: 1px solid var(--rule);
+      color: var(--muted);
+      font-size: 13.5px;
+    }
+
+    /* ---------- Mobile ---------- */
+    @media (max-width: 640px) {
+      .profile { flex-direction: column; text-align: center; gap: 20px; }
+      .profile .links a { margin: 0 7px; }
+      .pub { flex-direction: column; align-items: stretch; }
+      .pub .teaser { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <!-- ======================= Profile ======================= -->
+  <header class="profile">
+    <img src="images/profile_web.jpeg" alt="Dong Jing">
+    <div class="intro">
+      <h1>Dong Jing <span class="cn-name">- 荆栋</span></h1>
+      <p class="role">Ph.D. Candidate, GSAI at Renmin University of China</p>
+      <p class="email">jingdong98@ruc.edu.cn</p>
+      <div class="links">
+        <a href="https://scholar.google.com/citations?user=eDA8Ol8AAAAJ&hl=en">Google Scholar</a>
+        <a href="https://github.com/Timsty1">GitHub</a>
+        <!-- 可选：<a href="#">CV</a> / <a href="#">Twitter</a> -->
+      </div>
+    </div>
+  </header>
+
+  <!-- ======================= Bio ======================= -->
+  <section class="bio">
+    <p>
+      Hi there! I am a third-year Ph.D. candidate at <a href="http://ai.ruc.edu.cn">GSAI</a>,
+      <a href="https://www.ruc.edu.cn">Renmin University of China</a>, advised by Prof.
+      <a href="https://gsai.ruc.edu.cn/luzhiwu">Zhiwu Lu</a>.
+      Currently, I am working closely with Assoc. Prof. <a href="https://dingmyu.github.io/">Mingyu Ding</a> at <a href="https://cs.unc.edu/">UNC</a>.
+      Earlier, I received my Bachelor's and Master's degrees from Beijing Jiaotong University, where I was advised by
+      Assoc. Prof. <a href="https://faculty.bjtu.edu.cn/9278/">Shuo Zhang</a>.
+      I feel truly fortunate and honored to have worked with all three of my advisors.
+    </p>
+    <p>
+      I'm focusing on <strong>Embodied AI</strong>.
+      My goal is to <strong>build brains for robots</strong>, so that they can act in the physical world with human-level intelligence.
+      Humanity is standing at a singular moment in history. Productivity is being reshaped at an unprecedented pace.
+      Claude and GPT, today's leading LLMs, have already achieved astonishing intelligence <em>inside the screen</em>.
+      However, the physical world still remains beyond their reach.
+      Beyond doubt, such super-brains will need capable bodies.
+      They should grow toward human and even superhuman levels, not only mentally but also physically.
+    </p>
+    <p>
+      Unfortunately, today's Vision-Language-Action (VLA) models lag far behind LLMs.
+      Pessimistically speaking, they are still far from the <em>GPT-3 moment of Embodied AI</em>.
+      A key reason is that <strong>action is a modality fundamentally different from language</strong>.
+      In my view, the action modality has not yet shown enough potential for emergent capabilities through scaling.
+      <strong>How to properly understand and model action is an often-overlooked yet central question in Embodied AI.</strong>
+      I will devote myself to this topic in the coming years.
+    </p>
+    <p class="hiring">
+      I expect to graduate in June 2027 and <strong>actively exploring opportunities in industry</strong>.
+      Feel free to reach out!
+    </p>
+  </section>
+
+  <!-- ======================= Publications ======================= -->
+  <section id="publications">
+    <h2>Research Publications</h2>
+    <p class="note">(# denotes equal contribution. Full list on <a href="https://scholar.google.com/citations?user=eDA8Ol8AAAAJ&hl=en">Google Scholar</a>.)</p>
+
+    <!-- ---------- Track 1: Embodied AI ---------- -->
+    <h3 class="track">🤖 Embodied AI</h3>
+
+    <div class="pub">
+      <div class="teaser">
+        <video autoplay loop muted playsinline src="videos/MoH_teaser.mp4"></video>
+      </div>
+      <div class="info">
+        <p class="title"><a href="https://arxiv.org/abs/2511.19433">Mixture of Horizons in Action Chunking</a></p>
+        <p class="authors"><span class="me">Dong Jing</span>, Gang Wang, Jiaqi Liu, Weiliang Tang, Zelong Sun, Yunchao Yao, Zhenyu Wei, Yun-Hui Liu, Zhiwu Lu, Mingyu Ding</p>
+        <p class="meta">
+          <span class="venue">🔥ICML 2026🔥</span>
+          <a href="https://arxiv.org/abs/2511.19433">[paper]</a>
+          <a href="https://timsty1.github.io/moh/">[project]</a>
+          <a href="https://github.com/Timsty1/MixtureOfHorizons">[code]</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="pub">
+      <div class="teaser"><img src="teasers/TempoVLA.jpg" alt="TempoVLA teaser"></div>
+      <div class="info">
+        <p class="title">TempoVLA: Learning Speed-Controllable Vision-Language-Action Policies</p>
+        <p class="authors"><span class="me">Dong Jing</span>#, Jingchen Nie#, Tianqi Zhang#, Jiaqi Liu, Huaxiu Yao, Zhiwu Lu, Mingyu Ding</p>
+        <p class="meta">
+          <span class="venue">🔥Preprint🔥</span>
+          <span class="note">releasing within a week</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="pub">
+      <div class="teaser"><img src="teasers/LearnActionPrior.jpg" alt="Learning Action Priors teaser"></div>
+      <div class="info">
+        <p class="title">Learning Action Priors for Cross-embodiment Robot Manipulation</p>
+        <p class="authors"><span class="me">Dong Jing</span>, Tianqi Zhang, Jiaqi Liu, Yu Fang, Jinman Zhao, Li Erran Li, Zhiwu Lu, Mingyu Ding</p>
+        <p class="meta">
+          <span class="venue">🔥Preprint🔥</span>
+          <span class="note">releasing within a week</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="pub">
+      <div class="teaser"><img src="teasers/counterfactual.jpg" alt="Counterfactual VLA teaser"></div>
+      <div class="info">
+        <p class="title"><a href="https://arxiv.org/pdf/2602.17659">When Vision Overrides Language: Evaluating and Mitigating Counterfactual Failures in VLAs</a></p>
+        <p class="authors">Yu Fang, Yuchun Feng, <span class="me">Dong Jing</span>, Jiaqi Liu, Yue Yang, Zhenyu Wei, Daniel Szafir, Mingyu Ding</p>
+        <p class="meta">
+          <span class="venue">🔥Preprint🔥</span>
+          <a href="https://arxiv.org/pdf/2602.17659">[paper]</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="pub">
+      <div class="teaser"><img src="teasers/ReasonManip.jpg" alt="ReasonManip teaser"></div>
+      <div class="info">
+        <p class="title"><a href="https://arxiv.org/pdf/2505.12744">Incentivizing Multimodal Reasoning in Large Models for Direct Robot Manipulation</a></p>
+        <p class="authors">Weiliang Tang#, <span class="me">Dong Jing</span>#, Jia-Hui Pan, Zhiwu Lu, Yun-Hui Liu, Li Erran Li, Mingyu Ding, Chi-Wing Fu</p>
+        <p class="meta">
+          <span class="venue">Preprint</span>
+          <a href="https://arxiv.org/pdf/2505.12744">[paper]</a>
+        </p>
+      </div>
+    </div>
+
+    <!-- ---------- Track 2: Multimodal Learning ---------- -->
+    <h3 class="track">🎨 Multimodal Learning</h3>
+
+    <div class="pub">
+      <div class="teaser"><img src="teasers/FineCLIP.jpg" alt="FineCLIP teaser"></div>
+      <div class="info">
+        <p class="title"><a href="https://proceedings.neurips.cc/paper_files/paper/2024/file/3122aaa22b2fe83f9cead1a696f65ceb-Paper-Conference.pdf">FineCLIP: Self-distilled Region-based CLIP for Better Fine-grained Understanding</a></p>
+        <p class="authors"><span class="me">Dong Jing</span>#, Xiaolong He#, Yutian Luo, Nanyi Fei, Guoxing Yang, Wei Wei, Huiwen Zhao, Zhiwu Lu</p>
+        <p class="meta">
+          <span class="venue">NeurIPS 2024</span>
+          <a href="https://proceedings.neurips.cc/paper_files/paper/2024/file/3122aaa22b2fe83f9cead1a696f65ceb-Paper-Conference.pdf">[paper]</a>
+          <a href="https://github.com/Timsty1/FineCLIP">[code]</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="pub">
+      <div class="teaser"><img src="teasers/Saycheese.jpg" alt="Say Cheese teaser"></div>
+      <div class="info">
+        <p class="title"><a href="https://arxiv.org/pdf/2601.20511">Say Cheese! Detail-Preserving Portrait Collection Generation via Natural Language Edits</a></p>
+        <p class="authors">Zelong Sun, Jiahui Wu, Ying Ba, <span class="me">Dong Jing</span>, Zhiwu Lu</p>
+        <p class="meta">
+          <span class="venue">🔥CVPR 2026🔥</span>
+          <a href="https://arxiv.org/pdf/2601.20511">[paper]</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="pub">
+      <div class="teaser"><img src="teasers/VisATB.jpg" alt="Adaptive Task Balancing teaser"></div>
+      <div class="info">
+        <p class="title"><a href="https://dl.acm.org/doi/pdf/10.1145/3774904.3792371">Adaptive Task Balancing for Visual Instruction Tuning via Inter-Task Contribution and Intra-Task Difficulty</a></p>
+        <p class="authors">Yanqi Dai, Yong Wang, Zebin You, <span class="me">Dong Jing</span>, Xiangxiang Chu, Zhiwu Lu</p>
+        <p class="meta">
+          <span class="venue">🔥WWW 2026🔥</span>
+          <a href="https://dl.acm.org/doi/pdf/10.1145/3774904.3792371">[paper]</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="pub">
+      <div class="teaser"><img src="teasers/CoTMR.jpg" alt="CoTMR teaser"></div>
+      <div class="info">
+        <p class="title"><a href="https://arxiv.org/pdf/2502.20826">CoTMR: Chain-of-Thought Multi-Scale Reasoning for Training-Free Zero-Shot Composed Image Retrieval</a></p>
+        <p class="authors">Zelong Sun#, <span class="me">Dong Jing</span>#, Zhiwu Lu</p>
+        <p class="meta">
+          <span class="venue">ICCV 2025</span>
+          <a href="https://arxiv.org/pdf/2502.20826">[paper]</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="pub">
+      <div class="teaser"><img src="teasers/CIR.jpg" alt="Composed Image Retrieval teaser"></div>
+      <div class="info">
+        <p class="title"><a href="https://arxiv.org/pdf/2412.11087.pdf">Leveraging Large Vision-Language Model as User Intent-aware Encoder for Composed Image Retrieval</a></p>
+        <p class="authors">Zelong Sun, <span class="me">Dong Jing</span>, Guoxing Yang, Nanyi Fei, Zhiwu Lu</p>
+        <p class="meta">
+          <span class="venue">AAAI 2025</span>
+          <a href="https://arxiv.org/pdf/2412.11087.pdf">[paper]</a>
+        </p>
+      </div>
+    </div>
+
+    <!-- ---------- 早期工作（光场，待你确认是否保留 / 放哪个 Track） ---------- -->
+    <h3 class="track">📷 3D Low-level Vision</h3>
+
+    <div class="pub">
+      <div class="teaser"><img src="teasers/OBGN.jpg" alt="OBGNet teaser"></div>
+      <div class="info">
+        <p class="title"><a href="https://dl.acm.org/doi/pdf/10.1145/3474085.3475312">Occlusion-aware Bi-directional Guided Network for Light Field Salient Object Detection</a></p>
+        <p class="authors"><span class="me">Dong Jing</span>, Shuo Zhang, Runmin Cong, Youfang Lin</p>
+        <p class="meta">
+          <span class="venue">ACM MM 2021</span>
+          <a href="https://dl.acm.org/doi/pdf/10.1145/3474085.3475312">[paper]</a>
+          <a href="https://github.com/Timsty1/OBGNet">[code]</a>
+        </p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ======================= Awards ======================= -->
+  <section id="awards">
+    <h2>Awards</h2>
+    <ul class="awards-list">
+      <li>Excellent Graduate of Beijing Jiaotong University, 2022 - 2023</li>
+      <li><strong>National Scholarship of China</strong> (the highest scholarship for graduate students), 2020 - 2021</li>
+    </ul>
+  </section>
+
+  <!-- ======================= Service ======================= -->
+  <section id="service">
+    <h2>Service</h2>
+    <p>Reviewer of ICML, NeurIPS, CVPR, ICCV, ECCV, AAAI, ACM MM, CoRL, ToIS, TMLR, IROS</p>
+  </section>
+
+  <footer>
+    © 2026 Dong Jing · Last updated: June 2026
+  </footer>
+
+</div>
+</body>
+</html>
